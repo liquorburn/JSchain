@@ -11,7 +11,7 @@ Usage
 ```
 <head>
 <!-- some code -->
-<script src="add-function-2-load.js"></script>
+<script src="addFn2Load.js"></script>
 <!-- some other code -->
 </head>
 ```
