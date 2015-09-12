@@ -6,7 +6,7 @@ If you need to execute some JavaScript code when "load" event triggers, but for 
 Usage
 -----------
 
-- Include the file add-function-2-load.js within `<head>` tag, tipically after CSS file(s) declaration
+- Include `addFn2Load.js` within the `<head>` tag, tipically after CSS file(s) declaration
 
 ```
 <head>
