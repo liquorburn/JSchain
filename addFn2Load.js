@@ -20,7 +20,6 @@
     function domReady() {
         if (d.body) {
             objLoading.inject();
-            //	.setCss(objLoading.width, objLoading.height);
         } else {	
             w.setTimeout(function() { domReady(); }, 10);
         }
@@ -29,14 +28,6 @@
         width: w.innerWidth || d.documentElement.clientWidth || d.body.clientWidth,
         height: w.innerHeight || d.documentElement.clientHeight || d.body.clientHeight,
         domEl: false,
-        /*
-        setCss: function (wdt, hgt) {
-            if (false === this.domEl) return;
-            this.domEl.style.width = wdt + "px";
-            this.domEl.style.height = hgt + "px";
-            return this;
-        },
-        */
         inject: function() {
             if (false !== this.domEl) return;
             d.body.style.overflowX = "hidden";
