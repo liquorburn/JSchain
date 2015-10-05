@@ -1,22 +1,37 @@
 Add Function 2 Load
 =============
 
-If you need to execute some JavaScript code when "load" event triggers, but for some reason you can't use `$(window).load()` or similar, then try this simple script.
+Scenario
+-----------
+
+Let's say you need to write some JavaScript code here and there in your web page; also, suppose you want that code to be executed when **load** event is triggered. We all know that including JS libraries or other *huge* JS code right before closing `</body>` can improve the page loading time. But if jQuery (or another JS framework) is included at the bottom of your page and therefore after your code, you can't use `$(window).load()`. Consider this:
+
+```
+<body>
+<div>
+    <h1>The following JS code will produce an error</h1>
+    <script>
+        $(window).load(function() {}); // ReferenceError: $ is not defined
+    </script>
+</div>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</body>
+```
 
 Usage
 -----------
 
-- Include `addFn2Load.js` within the `<head>` tag, tipically after CSS file(s) declaration
+- Include `addFn2Load.js` within `<head>` tag, tipically after CSS file(s) declaration. This is the only JS code you will include within `<head>`:
 
 ```
 <head>
-<!-- some code -->
+<!-- some html code -->
 <script src="addFn2Load.js"></script>
-<!-- some other code -->
+<!-- some other html code -->
 </head>
 ```
 
-- Include any other js files you need just before the `</body>` tag
+- Include any other js files you need just before closing `</body>`:
 
 ```
 
