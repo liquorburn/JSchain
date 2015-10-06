@@ -41,7 +41,7 @@
 			z-index:8;
 		}
 		</style>
-		<script src="addFn2Load.js"></script>
+		<script src="JSchain.js"></script>
 	</head>
 	<body>
 	<header>
@@ -51,7 +51,7 @@
 	<div class="wrapper">
 		<img class="auto-scale" src="http://lorempixel.com/1920/1080/nature/1/" alt="" />
 		<script>
-			addFn2Load(function() {
+			JSchain(function() {
 				var newDiv = $(".last-div").clone();
 				newDiv.children("img").attr("src","http://lorempixel.com/1920/1080/nature/6/");
 				$(".last-div").removeClass("last-div").after(newDiv);
@@ -61,7 +61,7 @@
 	<div class="wrapper">
 		<img class="auto-scale" src="http://lorempixel.com/1920/1080/nature/2/" alt="" />
 		<script>
-			addFn2Load(function() {
+			JSchain(function() {
 				var newDiv = $(".last-div").clone();
 				newDiv.children("img").attr("src", "http://lorempixel.com/1920/1080/nature/7/");
 				$(".last-div").removeClass("last-div").after(newDiv);
