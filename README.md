@@ -26,7 +26,7 @@ Usage
 ```
 <head>
 <!-- some html code -->
-<script src="addFn2Load.js"></script>
+<script src="JSchain.js"></script>
 <!-- some other html code -->
 </head>
 ```
@@ -45,8 +45,9 @@ Usage
 
 ```
     <script>
-    addFn2Load(function() {
+    JSchain(function() {
       // your code here
+      // you can even use jQuery in here
     });
     </script>
 ```
