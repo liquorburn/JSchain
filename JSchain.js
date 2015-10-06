@@ -10,7 +10,7 @@
             if (this[b - 1] === a) return true;
         return false
     };
-    w.constructor.prototype.addFn2Load = function (a) {
+    w.constructor.prototype.JSchain = function (a) {
         "function" === typeof a && (fn_chain.hasObject(a) || fn_chain.push(a));
     };
     function doLoad() {
