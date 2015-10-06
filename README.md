@@ -21,7 +21,7 @@ Let's say you need to write some JavaScript code here and there in your web page
 Usage
 -----------
 
-- Include `addFn2Load.js` within `<head>` tag, tipically after CSS file(s) declaration. This is the only JS code you will include within `<head>`:
+- Include `JSchain.js` within `<head>` tag, tipically after CSS file(s) declaration. This is the only JS code you will include within `<head>`:
 
 ```
 <head>
